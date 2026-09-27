@@ -1,0 +1,17 @@
+{
+  // Adds "Dictation" to the Omarchy menu under Setup. Dotted ids define the
+  // tree, so "setup.dictation" lands inside the existing Setup submenu without
+  // redefining it.
+  //
+  // install-menu.sh merges this into
+  // ~/.config/omarchy/extensions/omarchy-menu.jsonc, which the shell watches —
+  // no restart needed. To do it by hand, copy the entry below into that file's
+  // top-level object.
+  "setup.dictation": {
+    "icon": "󰍬",
+    "label": "Dictation",
+    "aliases": ["voxtype"],
+    "when": "command -v voxtype >/dev/null",
+    "action": "omarchy-shell shell toggle io.voxtype.settings '{}'"
+  }
+}

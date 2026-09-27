@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "io.voxtype.settings",
+  "name": "Voxtype Settings",
+  "version": "0.1.0",
+  "author": "Voxtype",
+  "license": "MIT",
+  "homepage": "https://github.com/peteonrails/voxtype",
+  "category": "Audio",
+  "description": "Graphical settings panel for the Voxtype dictation daemon. Summon it with: omarchy-shell shell toggle io.voxtype.settings '{}'",
+  "kinds": [
+    "panel"
+  ],
+  "keepLoaded": true,
+  "entryPoints": {
+    "panel": "Panel.qml"
+  }
+}
